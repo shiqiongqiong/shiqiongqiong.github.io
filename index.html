@@ -25,14 +25,47 @@
       <div class="home">
   <div class="info">
     <a href="/" class="logo">Joanna</a>
-    <div class="subtitle"><span>I wrote the first half of my life on paper,<br>half a lifetime written in your life.❤️</span></div>
+    <div class="subtitle"><span><a href="http://caoxiaojia.com/">I wrote the first half of my life on paper,<br>half a lifetime written in your life.❤️</a></span></div>
     <div class="sns">
       
           <a href="/archives">Emotions</a>
       
     </div>
     <footer>
-  <span class="author">All is dedicated to my beloved girl in the rest of my life.——<a href="http://caoxiaojia.com/">Cao Xiaojia</a>.</span>
+  <span class="author">All is dedicated to my beloved girl in the rest of my life.</span>
+<br>
+<strong>
+<span id="showsectime" style="color:#f17c67;font-weight:normal"></span>
+<script type="text/javascript">
+function NewDate(str) { 
+str = str.split('-'); 
+var date = new Date(); 
+date.setUTCFullYear(str[0], str[1] - 1, str[2]); 
+date.setUTCHours(0, 0, 0, 0); 
+return date; 
+} 
+function showsectime() {
+var birthDay =NewDate("2014-3-8");
+var today=new Date();
+var timeold=today.getTime()-birthDay.getTime();
+var sectimeold=timeold/1000
+var secondsold=Math.floor(sectimeold);
+var msPerDay=24*60*60*1000; var e_daysold=timeold/msPerDay;
+var daysold=Math.floor(e_daysold);
+var e_hrsold=(daysold-e_daysold)*-24;
+var hrsold=Math.floor(e_hrsold);
+var e_minsold=(hrsold-e_hrsold)*-60;
+var minsold=Math.floor((hrsold-e_hrsold)*-60); var seconds=Math.floor((minsold-e_minsold)*-60).toString();
+document.getElementById("showsectime").innerHTML = "We have fallen in love for "+daysold+"days"+" "+hrsold+"hrs"+" "+minsold+"mins"+" "+seconds+"secs";
+setTimeout(showsectime, 1000);
+}showsectime();
+</script>
+<strong>
+
+<ml>
+</ml>
+
+    </strong>
 </footer>
   </div>
 </div>
