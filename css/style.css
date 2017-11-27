@@ -56,6 +56,24 @@ a {
 .page p {
   line-height: 1.5em;
 }
+/* 设置滚动条的样式 */
+/* 参考https://segmentfault.com/a/1190000003708894 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  background: color-white;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: rgba(128,128,128,0.75);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #808080;
+}
 .header {
   margin-bottom: 2em;
   padding: 0 20px;
