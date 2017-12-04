@@ -38,11 +38,11 @@ a {
   margin: 1em auto;
 }
 .home .info .sns a {
-  color: #f19989;
+  color: #f93;
   display: inline-block;
 }
 .home .info .sns a:hover {
-  color: #f17c67;
+  color: #f60;
 }
 .home .info footer {
   border: 0;
